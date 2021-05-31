@@ -1,0 +1,114 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: hsl(0, 0%, 98%);
+}
+body {
+    max-width: 375px;
+    margin: 25px auto auto auto;
+}
+
+/*Common font settings*/
+h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1.5rem;
+    margin: 0.5em 40px 0.5em 40px;
+}
+h2 {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 1.3rem;
+    margin: auto 40px;
+}
+p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    margin: auto 40px;
+}
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 20px 40px;
+    box-shadow: 0px 5px 10px hsl(240, 13%, 78%);
+
+    /*Element alignment within card*/
+    display: flex;
+    flex-direction: column;
+}
+#cardIcon {
+    margin-top: 30px;
+    max-width: 48px;
+    height: auto;
+    align-self: flex-end;
+    margin: 10px 30px;
+}
+
+/*Card font settings*/
+.card h1 {
+    margin: 0 0 1em 0;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 10px 30px;
+}
+.card p {
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 10px 30px;
+}
+/*Card top colors*/
+.card {
+    border-top: 5px solid;
+}
+div#greenCard {
+    border-top-color: hsl(180, 62%, 55%);
+}
+div#redCard {
+    border-top-color: hsl(0, 78%, 62%);
+}
+div#orangeCard {
+    border-top-color: hsl(34, 97%, 64%);
+}
+div#blueCard {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 5px 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+
+        margin: 50px auto auto auto;
+    }
+    body > h1, h2, p {
+        max-width: 50ch;
+    }
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .card {
+        max-width: 300px;
+        align-self: center;
+        margin: 20px 10px;
+    }
+}
+
